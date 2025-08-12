@@ -92,7 +92,7 @@ def update(i: UpdateItem, user_id: int):
     )
     mydb.commit()
     mydb.close()
-    return {"message": "Updated"}
+    return {"message": "Updated successful"}
 
 @app.delete("/del/{user_id}")
 def delete(user_id: int):
